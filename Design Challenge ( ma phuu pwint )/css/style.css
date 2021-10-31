@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+
+/* Start Main Nav Container  */
+
+.main-nav-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+
+/* start link container  */
+
+.main-nav-container .link-container a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.main-nav-container .link-container a.active {
+    position: relative;
+}
+
+.main-nav-container .link-container a.active::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #EBC934;
+    position: absolute;
+    bottom: -12px;
+    left: -6px;
+}
+
+
+/* end link container  */
+
+
+/* start input container  */
+
+.main-nav-container .input-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    right: 10%;
+}
+
+.main-nav-container .input-container i {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.main-nav-container .input-container form input {
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 10px;
+    outline: 0;
+}
+
+
+/* end input container  */
+
+.main-nav-container .img-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+/* End Main Nav Container  */
+
+
+/* Start Section */
+
+.bg1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/bg.jpeg);
+}
+
+.bg2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/bg1.jpg);
+}
+
+.bg3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/bg2.jpeg);
+}
+
+.bg4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/bg4.jpg);
+}
+
+.data {
+    /*width: 100%;*/
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+
+/* start data container */
+
+.data .data-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.data .data-container .video-container {
+    width: 90%;
+}
+
+.data .data-container .video-container .label {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+.data .data-container .video-container .control {
+    display: flex;
+    justify-content: space-around;
+}
+
+.data .data-container .video-container .control div {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.data .data-container .video-container .control div:first-child {
+    background-color: #F2D21B;
+}
+
+.data .data-container .video-container .control div:last-of-type {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.data .data-container .blog-container p {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin-bottom: 70px;
+}
+
+
+/* end data container */
+
+
+/* End Section */
